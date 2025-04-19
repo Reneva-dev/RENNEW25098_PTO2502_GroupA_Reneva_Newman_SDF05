@@ -9,36 +9,43 @@
 <body class="bg-[#6AA690] p-6">
 
           <footer class="bg-[#6AA690] text-black py-8 px-4">
-          <div class= "flex flex-col lg:flex-row justify-between gap-4">
-
-            <!-- Subscribe Section -->
-      <div class="w-full lg:w-1/2">
-        <h2 class="text-2xl font-medium mb-4">Subscribe to our Newsletter for updates.</h2>
-        <form class="flex flex-col sm:flex-row gap-4">
-          <input type="email" placeholder="Email Address" class="w-full sm:w-[250px] h-[40px] rounded-[10px] p-4" />
-          <button type="submit" class="bg-[#D96248] text-white text-sm rounded-[10px] py-2 px-5">Subscribe</button>
-        </form>
-      </div>
-                    
-        <!-- Quick Links -->
-        <div class="footer-section flex flex-col">
-            <h3 class="font-medium text-base mb-4">Quick Link</h3>
-            <ul class="list-none p-0 m-0">
-              <li><a href="#" class="text-black hover:underline">Home</a></li>
-              <li><a href="#" class="text-black hover:underline">Who We Are</a></li>
-              <li><a href="#" class="text-black hover:underline">Our Philosophy</a></li>
-            </ul>
-          </div>
           
-               <!-- Technologies -->
-        <div class="footer-section flex flex-col">
-            <h3 class="font-medium text-base mb-4">Technologies</h3>
-            <ul class="list-none p-0 m-0">
-              <li><a href="#" class="text-black hover:underline">HTML</a></li>
-              <li><a href="#" class="text-black hover:underline">CSS</a></li>
-              <li><a href="#" class="text-black hover:underline">JavaScript</a></li>
-            </ul>
-          </div>
+            <!-- Combined container for subscribe + grid -->
+<div class="flex flex-col lg:flex-row justify-between items-start gap-6 px-6 py-10 bg-[#6AA690]">
+
+    <!-- Subscribe Section -->
+    <div class="subscribe-container max-w-md w-full">
+      <h2 class="text-2xl font-medium mb-4">Subscribe to our Newsletter for updates.</h2>
+      <form class="flex flex-col md:flex-row gap-4">
+        <input type="email" placeholder="Email Address" class="w-full md:w-[250px] h-[40px] rounded-[10px] p-4" />
+        <button type="submit" class="bg-[#D96248] text-white text-sm rounded-[10px] py-2 px-5">Subscribe</button>
+      </form>
+    </div>
+  
+    <!-- Footer Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 lg:mt-0">
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3 class="font-medium text-base mb-4">Quick Link</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Who We Are</a></li>
+          <li><a href="#" class="hover:underline">Our Philosophy</a></li>
+        </ul>
+      </div>
+  
+      <!-- Technologies -->
+      <div class="footer-section">
+        <h3 class="font-medium text-base mb-4">Technologies</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">HTML</a></li>
+          <li><a href="#" class="hover:underline">CSS</a></li>
+          <li><a href="#" class="hover:underline">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
   
         </div>
       </div>
